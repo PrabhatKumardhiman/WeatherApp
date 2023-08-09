@@ -1,0 +1,8 @@
+.weather-details {
+    overflow: scroll;
+  
+}
+
+.weather-details::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,0 +1,7 @@
+.weather-details {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.weather-details::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
