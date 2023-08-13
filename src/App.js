@@ -12,7 +12,7 @@ function App() {
   const [querry, setQuerry] = useState("delhi")
 
   const fetchWeather = async (querry) => {
-    const resp = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=0703366db24547fc909202038232707&q=${querry}&days=5&aqi=no&alerts=no`)
+    const resp = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=0703366db24547fc909202038232707&q=${querry}&days=5&aqi=no&alerts=no`)
     const responseData = await resp.json()
     return responseData;
   };
@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    data && <div className=" max-w-screen-lg mx-auto py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-500">
+    data && <div className=" max-w-screen-lg mx-auto my-10 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-500">
       <TopButton setQuerry={setQuerry} />
       <Input setUnit={setUnit} setQuerry={setQuerry} />
       <TimeAndLocation location={location} />
