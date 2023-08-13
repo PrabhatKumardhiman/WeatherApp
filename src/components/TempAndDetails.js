@@ -28,7 +28,7 @@ const TempAndDetails = (props) => {
       
       </div>
       <div className="container">
-        <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm  py-6 ">
+        <div className="tempContainer flex flex-row items-center justify-center space-x-2 text-white text-sm  py-6 ">
           <UilSun/><p className='font-light'>Rise: <span className='font-medium ml-1'>{props.forecast.forecastday[0].astro.sunrise}</span></p>
           <p className='font-light'>|</p>
           <UilSunset/><p className='font-light'>Set: <span className='font-medium ml-1'>{props.forecast.forecastday[0].astro.sunset}</span></p>

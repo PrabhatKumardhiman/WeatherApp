@@ -5,3 +5,24 @@
 .weather-details::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+
+@media (max-width: 600px) {
+   .cont{
+        display: flex;
+        flex-direction: column;
+        
+   }
+    .mainContainer{
+        padding: 0.2rem;
+        width: 100%;
+        max-width: 600px;
+        margin : 0
+    }
+
+    .tempContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

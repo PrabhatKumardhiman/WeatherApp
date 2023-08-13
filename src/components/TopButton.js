@@ -29,7 +29,7 @@ function TopButton(props) {
 
   ]
   return (
-    <div className=' flex items-center justify-around my-6'>
+    <div className='cont flex items-center justify-around my-6'>
       {cities.map((element)=>
       <button key = {element.id} onClick = {() => props.setQuerry(element.city ==="Delhi" ? "New Delhi" : element.city)} className="btn text-white text-lg font-medium transition ease-out hover:scale-125">{element.city}</button>
       )}

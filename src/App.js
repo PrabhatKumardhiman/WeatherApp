@@ -1,3 +1,4 @@
+import "./App.css"
 import TopButton from './components/TopButton';
 import Forcast from './components/Forcast';
 import TimeAndLocation from './components/TimeAndLocation';
@@ -33,7 +34,7 @@ function App() {
   }
 
   return (
-    data && <div className=" max-w-screen-lg mx-auto my-10 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-500">
+    data && <div className="mainContainer md:max-w-screen-lg sm:max-w-screen-sm mx-auto my-10 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-500">
       <TopButton setQuerry={setQuerry} />
       <Input setUnit={setUnit} setQuerry={setQuerry} />
       <TimeAndLocation location={location} />
